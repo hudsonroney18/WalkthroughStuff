@@ -1,3 +1,6 @@
+//Hudson Roney February 21, 2025
+//This program stores movie information and allows CRUD functionality to add more movies to the database
+
 using Microsoft.EntityFrameworkCore;
 using WalkthroughStuff.Models;
 

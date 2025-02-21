@@ -156,3 +156,4 @@
 /Users/hudsonroney/RiderProjects/WalkthroughStuff/WalkthroughStuff/obj/Debug/net8.0/WalkthroughStuff.pdb
 /Users/hudsonroney/RiderProjects/WalkthroughStuff/WalkthroughStuff/obj/Debug/net8.0/WalkthroughStuff.genruntimeconfig.cache
 /Users/hudsonroney/RiderProjects/WalkthroughStuff/WalkthroughStuff/obj/Debug/net8.0/ref/WalkthroughStuff.dll
+/Users/hudsonroney/RiderProjects/WalkthroughStuff/WalkthroughStuff/obj/Debug/net8.0/WalkthroughStuff.sourcelink.json

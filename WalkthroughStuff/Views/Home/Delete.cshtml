@@ -1,0 +1,11 @@
+@model Movie
+
+
+<h2>Delete Movie</h2>
+<h3>@Model.Title, @Model.Director</h3>
+<form asp-controller="Home" asp-action="Delete" method="post">
+    <input type="hidden" asp-for="MovieId" />
+    
+    <button type="submit">Delete</button>
+    <a class="btn btn-info" asp-controller="Home" asp-action="ViewMovie">cancel</a>
+</form>

@@ -4,20 +4,22 @@
     ViewData["Title"] = "Movies List";
 }
 
-<h2>Movies List</h2>
+<h2 class="text-center my-4">Movies List</h2>
 
-<table class="table table-striped">
-    <thead>
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
     <tr>
-        <th>Movie ID</th>
+        <th>MovieID</th>
         <th>Category</th>
         <th>Title</th>
         <th>Year</th>
         <th>Director</th>
         <th>Rating</th>
         <th>Edited</th>
+        <th>Copied To Plex</th>
         <th>Lent To</th>
         <th>Notes</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -25,14 +27,20 @@
     {
         <tr>
             <td>@movie.MovieId</td>
-            <td>@movie.Category</td>
+            <td>@movie.Category.CategoryName</td>
             <td>@movie.Title</td>
             <td>@movie.Year</td>
             <td>@movie.Director</td>
             <td>@movie.Rating</td>
             <td>@(movie.Edited ? "Yes" : "No")</td>
             <td>@movie.LentTo</td>
+            <td>@(movie.CopiedToPlex ? "Yes" : "No")</td>
             <td>@movie.Notes</td>
+
+            <td>
+                <a class="btn btn-outline-dark" asp-area="" asp-controller="Home" asp-action="Edit" asp-route-id="@movie.MovieId">Edit Movie</a>
+                <a class="btn btn-outline-dark" asp-area="" asp-controller="Home" asp-action="Delete" asp-route-id="@movie.MovieId">Delete Movie</a>
+            </td>
         </tr>
     }
     </tbody>
